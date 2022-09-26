@@ -1,0 +1,98 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box{
+	width: 600px;
+	height: 600px;
+	background-color: cyan;
+	overflow: hidden;
+}
+/*traffic light*/ 
+.lights{
+
+	position: absolute;
+	width: 30%;
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+.l, .t{
+	height: 100%;
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.light{
+	background-color: black	;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 15%;
+}
+.lig1{
+	margin: 0.5px;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+}
+.r{
+	background-color: /*rgba(255, 0, 0, 0.2)*/;
+}
+.y{
+	background-color: rgba(255, 225, 0, 0.2);
+}
+.g{
+	background-color: rgba(0, 225, 0, 1.0);
+}
+
+/* road section */
+.roadA{
+	width: 100%;
+	height: 30%;
+	background-color: rgba(10, 10, 10, 0.25);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 35%;
+}
+.roadB{
+	width: 30%;
+	height: 100%;
+	background-color: rgba(10, 10, 10, 0.25);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: -65%;
+	margin-left: 35%;
+}
+.lane{
+	background-color: rgba(10, 10, 10, 0.25);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+.A{
+	width: 100%;
+	height: 49%;
+}
+.B{
+	width: 49%;
+	height: 100%;
+	flex-direction: row;
+}
+.B:nth-child(2), .A:nth-child(1){
+	align-items: flex-end;
+}
+.car{
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+}
