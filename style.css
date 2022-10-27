@@ -1,313 +1,322 @@
-		html{
-			opacity: 0;
-			width: 0%;
-		}
-		body, html{
-			margin: 0;
-			padding: 0;
-			height: 100%;
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background-color: black;
-		}
-		.header{
-			width: 100%;
-			height: 6%;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			margin-bottom: 4%;
-			font-family: sans-serif;
-			background-color: rgb(0, 0, 100);
-			color: white;
-		}
-		span{
-			font-weight: bolder;
-		}
-		h2{
-			font-family: ink free;
-		}
-		.canvas{
-			width: 50%;
-			height: 90%;
-			background-color: brown;
-		}
-		.cover{
-			position: absolute;
-			top: 10%;
-			width: 50%;
-			height: 90%;
-			background-color: transparent;
-			animation: wrap 0.5s forwards 4s;
-		}
-		@keyframes wrap{
-			from{}
-			to{
-				height: 0%;
-			}
-		}
-		img{
-			animation: flip 1s forwards 3s;
-			width: 100px;
-			height: 100px;
-		}
-		@keyframes flip{
-			from{
-				transform: rotateY(0deg);
-			}
-			to{
-				transform: rotateY(180deg);
-				filter: brightness(0);
-			}
-		}
 
-		/*time out section*/
-		.time , span{
-			font-weight: bolder;
-			color: white;
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(sch.jpg) ;
+    background-size: 100% 650px;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
 
-		}
+/* head section */
+.logo{
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+.logo span{
+    font-size:8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: grey;
+    margin-top: 8px;
+}
+.head{
+    margin:0%;
+    /* padding: 4%; */
+    width:100%;
+    height:100px;
+    background-color: rgb(0, 0, 24);
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.head ul {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60%;
+    
+}
+.head ul li {
+    list-style-type: none;
+    
+    
+}
+.head ul li a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    font-size: 15px;
 
-		/* Introduction Page */
+}
 
-		h3{margin-top: 5px;
-			color: white;
-			text-shadow: 2px 4px 2px blue;
-			font-weight: bolder;
-			font-size: 50px;
-			
+.fa-bars{
+    opacity:0;
+}
+.hom:hover{
+    color: blue;
+    font-size: 16px;
+}
+.hom:checked, .abt:hover, .tes:hover, .cot:hover{
+    color: blue;
+    font-size: 16px;
+}
 
-		}
-		b{
-			font-weight: bolder;
-			font-size: 30px;
-			text-align: unset;
-			align-items: unset;
 
-		}
-		a{
-			text-decoration: none;
-			font-family: fantasy;
-			padding: 5px;
-			color: black;
-			
 
-		}
-		button{
-			width: 100px;
-			border-radius: 15%;
-			box-shadow: 0px 0px 2px 1px black;
-		}
-		.front{
-			margin-top: 10%;
-			width: 500px;
-			height: 200px;
-			border: 1px solid blue;
-			border-radius: 5%;
-			text-align: center;
-			box-shadow: 0px 0px 5px 5px blue;
-			animation: change 5s infinite ease-in;
-			background-color: royalblue;
+ .about, .Testimonies, .contact {
+    width: 100%;
+    height: 550px;
+   margin-top: -3.3%;
+    position: relative;
+    
+   
+}
+h2{
+    justify-content: space-around;
+    align-self: center;
+    
+    font-size: 50px;
+    text-decoration: underline;
+    display: flex;
+}
+/* home section */
+.home{
+    width: 100%;
+    height: 550px;
+    background-color: rgba(77, 74, 74, 0.8);
+    
+    color: white;
+    
+}
+h1{
+    position: absolute;
+    color: white;
+    margin-top: 15%;
+    margin-left: 30%;
+}
+.con{
+    width: 100%;
+    height: 550px;
+    color: white;
+    background-color: red;
+   position: absolute;
+   color: white;
 
-		}
+}
 
-		@keyframes change{
-			0%{
-				box-shadow: 0px 0px 5px 5px blue;
-			}
-			25%{
-				box-shadow: 0px 0px 5px 5px red;
-			}
-			50%{
-				box-shadow: 0px 0px 5px 5px green;
-			}
-			75%{
-				box-shadow: 0px 0px 5px 5px yellow;
-			}
-			100%{
-				box-shadow: 0px 0px 5px 5px brown;
-			}
-		}
+/* contact section */
+.contact{
+    background-color: black;
+    height: 150px;
+    color:rgb(126, 122, 122);
+    position: relative;
+}
+.contact ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.contact h2{
+    font-size: 35px;
+}
+.contact ul li font i {
+    color: blue;
+    padding: 5px;
+    
+    
+}
+.contact ul li font .fa-facebook {
+    color: rgb(23, 3, 95);
+    font-size: 25px;
+}
+.contact ul li font .fa-phone {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.contact ul li font .fa-whatsapp {
+    color: rgb(5, 77, 2);
+    font-size: 30px;
+}
+.contact ul li font .fa-envelope {
+    color: rgb(105, 3, 3);
+    font-size: 30px;
+}
+.contact ul li {
+    list-style-type: none;
+}
+/* about section */
+.about{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    
+}
+.about h2{
+    padding-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about em{
+    padding-left: 10%;
+}
+.about em p {
+    padding-left: 10%;
+}
+.about em br {
+    padding-left: 10%;
+}
+/* reviews */
+.Testimonies{
+    background-image: url(school.jpg);
+    background-size: cover;
+    overflow: hidden;
+    font-size: larger;
+    position: relative;
+}
+.review{
+    
+    width:180%;
+    height: 150px;
+   
+    
+}
+.cover{
+    background-color: rgba(215, 216, 213, 0.7);
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
 
-/* homepage decoration */
-		#one{
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			background-color: black;
-			/* box-shadow: 0px 0px 5px 5px green;
-			box-shadow: 0px 0px 10px 5px white; */
-			position:absolute;
-			
-		}
+.review .scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-right: 100%;
+    width:100%;
+    height: 50px;
+    padding: 10px;
+    animation: mov  15s infinite;
+    
+    
+    
+    
+  
+    
+    
+    /* justify-content: space-between; */
+}
+/* .ade{
+    animation: mov  30s ease-in-out infinite;
+    
+} */
 
-		.C1{
-			
-			top:10%;
-			left: 0%;
-			animation: c1 20s infinite ease-in-out;
-			animation-delay: 5s;
-		}
-		.C2{
-			
-			bottom:5%;
-			left: 0%;
-			animation: c2 20s infinite ease-in-out;
-			animation-delay: 10s;
-		}
-		.C3{
-			
-			top:10%;
-			right: 0%;
-			animation: c3 20s infinite ease-in-out;
-			animation-delay: 20s;
-		}
-		.C4{
-			
-			bottom:5%;
-			right: 0%;
-			animation: c4 20s infinite ease-in-out;
-			animation-delay: 15s;
-		}
-		.out{
-			width: 500px;
-			height: 200px;
-			background-color: rgb(0, 0, 100);
-			color: white;
-			position: absolute;
-			top: 30%;
-			left: 30%;
-			border: 1px solid white;
-			border-radius: 20px;
-			box-shadow: rgb(245, 245, 247);
-			display: none;
-			animation: changein 5s infinite ease-in-out;
-		}
-		.out h2, p {
-			padding-left: 40%;
-			align-content: center;
-			justify-items: center;
-		}
-		button{
-			margin-left: 40%;
-		}
-		@keyframes changein{
-			0%{
-				box-shadow: 0px 0px 5px 5px blue;
-			}
-			25%{
-				box-shadow: 0px 0px 5px 5px red;
-			}
-			50%{
-				box-shadow: 0px 0px 5px 5px green;
-			}
-			75%{
-				box-shadow: 0px 0px 5px 5px yellow;
-			}
-			100%{
-				box-shadow: 0px 0px 5px 5px brown;
-			}
-		}
+@keyframes mov{
+    0%{
 
-		@keyframes c1{
-			0%{
-				background-color: black;
-			}
-			20%{
-				background-color: blue;
-			}
-			
-			40%{
-				background-color: green;
-			}
-			
-			60%{
-				background-color: yellow;
-			}
-			
-			80%{
-				background-color: blueviolet;
-			}
-			
-			100%{
-				background-color: red;
-			}
+    }
+  
+   
+    50%{
+        margin-left: -50%;
+        
+       
+    }
+    100%{
+        margin-left: 5%;
+    }
 
-		}
-		@keyframes c2{
-			0%{
-				background-color: black;
-			}
-			20%{
-				background-color: blue;
-			}
-			
-			40%{
-				background-color: green;
-			}
-			
-			60%{
-				background-color: yellow;
-			}
-			
-			80%{
-				background-color: blueviolet;
-			}
-			
-			100%{
-				background-color: red;
-			}
+}
 
-		}
-		@keyframes c4{
-			0%{
-				background-color: black;
-			}
-			20%{
-				background-color: blue;
-			}
-			
-			40%{
-				background-color: green;
-			}
-			
-			60%{
-				background-color: yellow;
-			}
-			
-			80%{
-				background-color: blueviolet;
-			}
-			
-			100%{
-				background-color: red;
-			}
 
-		}
-		@keyframes c3{
-			0%{
-				background-color: black;
-			}
-			20%{
-				background-color: blue;
-			}
-			
-			40%{
-				background-color: green;
-			}
-			
-			60%{
-				background-color: yellow;
-			}
-			
-			80%{
-				background-color: blueviolet;
-			}
-			
-			100%{
-				background-color: red;
-			}
+.fa-star, .fa-star-half {
+    color: rgb(255, 217, 1);
+    text-shadow: blanchedalmond;
+}
+@media (max-width: 750px){
+    .fa-bars{
+        opacity: 1;
+        position: absolute;
+        top: 30%;
+        left: 90%;
+        color: white;
+        font-size: 200px;
+    }
+    .hom, .abt, .tes, .cot{
+        opacity: 0;
+    }
+}
+@media (max-width: 500px){
+    body{
+        margin: 0%;
+        padding: 0%;
+        background-image: url(sch.jpg) ;
+        background-size: 100% 550px;
+        background-repeat: no-repeat;
+        background-position: fixed;
+    }
+    .fa-bars{
+        opacity: 1;
+        position: absolute;
+        top: 30%;
+        left: 90%;
+        color: white;
+        font-size: 200px;
+    }
+    .hom, .abt, .tes, .cot{
+        opacity: 0;
+    }
 
-		}
+    .home{
+        width: 100%;
+        height: 450px;
+        background-color: rgba(77, 74, 74, 0.8);
+        margin: 0%;
+        position: relative;
+    }
+    h1{
+        position: absolute;
+        color: white;
+        margin-top: 30%;
+        margin-left: 10%;
+    }
+    .about, .Testimonies, .contact {
+        width: 100%;
+        height: 450px;
+        background-color: grey;
+        position: relative;
+        /* margin-top: 5px; */
+       
+    }
+    .about em a{
+        opacity: 0;
+    }
+    .contact{
+        background-color: black;
+        height: 200px;
+        color: white;
+       
+        
+    }
+    .contact ul{
+        display: flex;
+        justify-content: center;
+        margin-left: 20%;
+    }
+
+    .about{
+        background-color: white;
+    }
+    .contact b{
+        opacity: 0;
+    }
+    
+}
